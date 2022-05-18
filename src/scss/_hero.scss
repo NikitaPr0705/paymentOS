@@ -1,0 +1,167 @@
+.section {
+
+    &__hero {
+        padding-bottom: 86px;
+        position: relative;
+
+        @media (max-width: $breakpoint992) {
+            padding-bottom: 400px;
+        }
+
+        // @media (max-width: $breakpoint768) {
+        //     padding-bottom: 450px;
+        // }
+
+        .header__img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            max-width: 880px;
+            z-index: -1;
+
+            @media (max-width: $breakpoint1200) {
+                max-width: 600px;
+            }
+
+
+            @media (max-width: $breakpoint992) {
+                top: unset;
+                bottom: 0;
+            }
+
+            @media (max-width: $breakpoint480) {
+                bottom: 100px;
+            }
+        }
+    }
+}
+
+.hero {
+
+    &__item {
+        margin-bottom: 130px;
+
+        @media (max-width: $breakpoint1200) {
+            margin-bottom: 75px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        padding-top: 100px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.29;
+        color: $primary;
+        max-width: 387px;
+        margin-bottom: 15px;
+
+        @media (max-width: $breakpoint1200) {
+            padding-top: 75px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            padding-top: 50px;
+            font-size: 36px;
+            max-width: 100%;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 28px;
+            padding-top: 35px;
+
+        }
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $secondaryLight;
+        max-width: 530px;
+        margin-bottom: 30px;
+
+        @media (max-width: $breakpoint992) {
+            max-width: 100%;
+        }
+
+        @media (max-width: $breakpoint480) {
+           margin-bottom: 0;
+        }
+    }
+
+    &__buttons {
+        @media (max-width: $breakpoint480) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__btn {
+        @media (max-width: $breakpoint480) {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+
+    &__stats-title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        text-transform: uppercase;
+        color: $secondaryLight;
+    }
+
+    &__stats {
+        display: flex;
+        gap: 80px;
+
+        @media (max-width: $breakpoint992) {
+            gap: 50px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            gap: 25px;
+        }
+    }
+
+    &__stats-item {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__stats--num {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1;
+        color: $primary;
+        margin-top: 25px;
+        margin-bottom: 12px;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 26px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__stats--text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $secondary;
+
+        @media (max-width: $breakpoint480) {
+            font-size: 12px;
+        }
+    }
+}

@@ -6,11 +6,14 @@
         @media (max-width: $breakpoint1200) {
             padding: 75px 0;
         }
+
+        @media (max-width: $breakpoint480) {
+            padding: 0 0 75px 0;
+        }
     }
 
 }
-.container {
-}
+
 .special {
     display: flex;
     flex-wrap: wrap;

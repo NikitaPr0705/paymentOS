@@ -1,0 +1,138 @@
+.section {
+
+    &__support {
+        padding: 140px 0;
+
+        @media (max-width: $breakpoint1200) {
+            padding: 100px 0;
+        }
+
+        ;
+
+        @media (max-width: $breakpoint992) {
+            padding: 75px 0;
+        }
+
+        ;
+
+        @media (max-width: $breakpoint768) {
+            padding: 35px 0;
+        }
+
+        ;
+    }
+
+}
+
+.support {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    &__first {
+        margin-top: 45px;
+
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .support__item {
+            @media (max-width: $breakpoint768) {
+                flex: 0 1 100%;
+                margin-top: 10px;
+
+                // &:nth-child(3n + 1) {
+                //     filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+                //     background: #fff;
+                // }
+            }
+
+
+
+            &:nth-child(even) {
+                filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+                background: #fff;
+
+                @media (max-width: $breakpoint768) {
+                    filter: none;
+                    background: #FAFBFD;
+                }
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 255px;
+        background: #FAFBFD;
+        border-radius: 4px;
+        padding: 20px;
+
+        @media (max-width: $breakpoint768) {
+            padding: 10px;
+        }
+
+        &-name {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            color: $primary;
+            margin-top: 15px;
+        }
+
+    }
+
+    &__item-img {
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__item-links {
+        display: flex;
+        align-items: center;
+        margin-top: 7px;
+        gap: 10px;
+    }
+
+    &__link {}
+
+    &__second {
+        margin-top: 30px;
+
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+
+        .support__item {
+
+            @media (max-width: $breakpoint768) {
+                flex: 0 0 100%;
+                margin-top: 20px;
+
+                &:nth-child(odd) {
+                    filter: none;
+                    background: #FAFBFD;
+                }
+
+                // &:nth-child(3n + 1) {
+                //     filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+                //     background: #fff;
+                // }
+            }
+
+            &:nth-child(odd) {
+                filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+                background: #fff;
+            }
+        }
+    }
+}
